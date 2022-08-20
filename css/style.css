@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -71,21 +73,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ----------------------------- */
+/* navigation-section */
+/* ----------------------------- */
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/fonts/Raleway-Bold.ttf);
+  src: url(/fonts/font-raleway/Raleway-Bold.ttf);
 }
 
-body{
-  font-family:'Raleway';
-};
-
 .navigation{
-  min-width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
+  font-family:'Raleway';
 }
 
 .navigation__menu{
@@ -110,7 +107,7 @@ body{
   letter-spacing: 1.275px;
   color: #000000;
   padding: 10px;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
@@ -130,4 +127,70 @@ body{
 
 .menu__link:hover{
   box-shadow: 0px 10px 0px 0px #4BA87D;
+}
+/* ------------------------------------------- */
+
+/* hero-section */
+/* ------------------------------------------- */
+
+.hero {
+  display: flex;
+  margin: 200px;
+  background: url('/images/Ellipse\ 2.svg') no-repeat 50% 100%, url('/images/Rectangle\ 2.svg') no-repeat 55% 10%,
+  url('/images/Ellipse\ 5.svg') no-repeat 30% 79%, url('/images/Ellipse\ 3.svg') no-repeat 0% 0%,
+  url('/images/Rectangle\ 1.svg') no-repeat 25% 12%, url('/images/Ellipse\ 1.svg') no-repeat 55% 90%;
+
+  margin-bottom: 10px;
+}
+.hero__leftside {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.leftside__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 69px;
+  line-height: 150%;
+  flex: 0 1 70%;
+}
+.leftside__text {
+  font-family: 'Raleway';
+  font-size: 19px;
+line-height: 26px;
+}
+.leftside__button_green {
+  font-family: 'Raleway';
+  background-color: #4BA87D;
+  color: #fff;
+  font-style: normal;
+  font-size: 21px;
+  text-align: center;
+  padding: 20px 45px;
+  flex: 0 1 25%;
+}
+.leftside__button_white {
+  font-family: 'Raleway';
+  border: 2px solid #4BA87D;
+  color: #4BA87D;
+  font-style: normal;
+  font-size: 21px;
+  background-color: #fff;
+  padding: 20px 45px;
+  flex: 0 1 auto;
+
+}
+
+.leftside__button_green,
+.leftside__button_white{
+transform: scale(1.2);
+margin: 30px 30px 0 30px
+}
+
+.leftside__button_green:hover,
+.leftside__button_white:hover{
+  transform: scale(1.3);
+}
+.photo__image {
+  box-shadow: 0px 10px 40px -10px gray;
+  min-width: 100%;
 }
