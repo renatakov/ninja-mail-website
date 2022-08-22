@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .menu__logo{
@@ -152,12 +153,51 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 69px;
   line-height: 150%;
   flex: 0 1 70%;
+  animation: title 600ms ease-in  normal;
+
 }
+
+@keyframes title{
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  transform: translateX(-80px);
+  }
+
+
+}
+
 .leftside__text {
   font-family: 'Raleway';
   font-size: 19px;
-line-height: 26px;
+  line-height: 26px;
+  animation: text 0.6s 200ms ease-in normal;
 }
+
+@keyframes text{
+  0%{
+    opacity: 0;
+    transform: translateX(120px);
+  }
+
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  transform: translateX(-40px);
+  }
+}
+
 .leftside__button_green {
   font-family: 'Raleway';
   background-color: #4BA87D;
@@ -167,6 +207,21 @@ line-height: 26px;
   text-align: center;
   padding: 20px 45px;
   flex: 0 1 25%;
+  animation: button 400ms 600ms ease-in normal;
+}
+
+@keyframes button{
+0%{
+  opacity: 0;
+  transform: translateY(-200px);
+}
+50%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+  transform: translateY(25px);
+}
 }
 .leftside__button_white {
   font-family: 'Raleway';
@@ -177,6 +232,7 @@ line-height: 26px;
   background-color: #fff;
   padding: 20px 45px;
   flex: 0 1 auto;
+  animation: button 600ms 600ms ease-in normal;
 
 }
 
@@ -193,4 +249,73 @@ margin: 30px 30px 0 30px
 .photo__image {
   box-shadow: 0px 10px 40px -10px gray;
   min-width: 100%;
+  animation: photo 1s 400ms ease-in normal;
+  z-index: 0;
+}
+
+.hero__photo{
+  perspective: 400px;
+}
+
+@keyframes photo {
+  0%{
+    opacity: 0;
+    transform: translate3d(80px, 100px, 80px);
+
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.video{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(151, 151, 151, 0.201);
+}
+
+.video__content{
+  display: flex;
+  flex-flow: column wrap;
+  background: url('/images/VIDEO\ \(image\).png') no-repeat ;
+  margin: 50px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content__title{
+  font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 900;
+font-size: 60px;
+line-height: 80px;
+color: #FFFFFF;
+margin: 163px 144px 0;
+
+}
+
+.content__button{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.05px;
+  color: #4BA87D;
+  background-color: #fff;
+  padding:20px 32px;
+  margin: 20px 0 162px;
+}
+
+.content__button:hover{
+  transform: scale(1.2);
 }
