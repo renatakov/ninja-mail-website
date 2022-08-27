@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 69px;
   line-height: 150%;
   flex: 0 1 70%;
-  animation: title 600ms ease-in  normal;
+  animation: title 600ms 200ms ease-in  normal;
 
 }
 
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway';
   font-size: 19px;
   line-height: 26px;
-  animation: text 0.6s 200ms ease-in normal;
+  animation: text 0.6s 400ms ease-in normal;
 }
 
 @keyframes text{
@@ -560,4 +560,30 @@ transition: 0.3s;
   color: #FFFFFF;
   background: #4BA87D;
   padding: 20px 30px;
+}
+
+/* ------------------------------ */
+/* brands section */
+/* ------------------------------ */
+
+.brands {
+  display: flex;
+  margin: 20px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.brands__title {
+  font-family: 'Playfair Display';
+  font-size: 44px;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+.brands__logos {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  flex: 0 1 20%;
+}
+.image {
+padding-left: -30px;
 }
