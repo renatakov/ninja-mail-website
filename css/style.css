@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   background-color: #fff;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 2;
   /* flex: 0 1 50%; */
@@ -124,18 +124,24 @@ h1, h2, h3, h4, h5, h6 {
 .menu__link:hover{
   box-shadow: 0px 10px 0px 0px #4BA87D;
 }
-/* @media  (max-width:320px) {
+@media  (max-width:320px) {
   .menu__link{
     display: none;
   }
   .menu__link:last-child{
-    display: flex;
+    display: block;
+    padding: 10px;
+    margin: 0;
   }
   .navigation__menu{
     display: flex;
-    flex: 0 1 10%;
+    justify-content: center;
+    align-items: center;
   }
-} */
+  .menu__logo{
+    flex-basis: 5%;
+  }
+}
 /* ------------------------------------------- */
 
 /* hero-section */
