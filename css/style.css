@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu__link:hover{
   box-shadow: 0px 10px 0px 0px #4BA87D;
 }
-@media  (max-width:320px) {
+@media(min-width: 320px) and (max-width:480px) {
   .menu__link{
     display: none;
   }
@@ -313,7 +313,7 @@ margin: 30px 30px 0 30px
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width:480px) {
   .hero {
     position: relative;
     margin: 50px 0 0;
@@ -430,7 +430,7 @@ margin: 163px 144px 0;
   transform: scale(1.2);
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width:480px) {
   .video{
     padding: 0;
     margin: 20px 0;
@@ -584,7 +584,7 @@ line-height: 26px;
 margin-top: 24px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width:480px) {
   .source {
     margin-top: 40px;
     flex: 0 1 20%;
@@ -787,7 +787,7 @@ transition: 0.3s;
   padding: 20px 30px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width:480px) {
   .members__row {
     flex-direction: column;
   }
@@ -880,7 +880,7 @@ transition: 0.3s;
 padding-left: -30px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width:480px) {
   .brands__title {
     font-size: 30px;
     line-height: 130%;
@@ -930,7 +930,7 @@ padding-left: -30px;
 
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width:480px) {
   .plan__title{
     font-size: 40px;
     text-align: center;
@@ -1000,7 +1000,7 @@ line-height: 18px;
   color: #000;
 }
 
-@media (max-width: 320px){
+@media (min-width: 320px) and (max-width:480px){
   .list__4{
     margin-top: 20px;
   }
